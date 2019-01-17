@@ -1,6 +1,9 @@
-# Alertmanager Resource [![Build Status](https://travis-ci.org/frodenas/alertmanager-resource.png)](https://travis-ci.org/frodenas/alertmanager-resource)
+# Alertmanager Resource
 
 A [Concourse](http://concourse.ci/) resource to interact with [Prometheus Alertmanager](https://prometheus.io/docs/alerting/alertmanager/), allowing you to `silence` certain alerts and to `expire` silences.
+
+## Fork status
+This repository is a friendly fork of frodenas's repository made to work with alertmanager v0.15.3 and we hope our changes will be merged one day.
 
 ## Source Configuration
 
@@ -62,7 +65,7 @@ resource_types:
   - name: alertmanager-resource
     type: docker-image
     source:
-      repository: frodenas/alertmanager-resource
+      repository: emeraldsquad/alertmanager-resource
 ```
 
 ### Resource

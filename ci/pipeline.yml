@@ -19,12 +19,12 @@ resources:
   - name: docker-image-src
     type: git
     source:
-      uri: https://github.com/frodenas/alertmanager-resource.git
+      uri: https://github.com/emerald-squad/alertmanager-resource.git
       branch: master
 
   - name: docker-image
     type: docker-image
     source:
-      username: {{docker-hub-username}}
-      password: {{docker-hub-password}}
-      repository: frodenas/alertmanager-resource
+      username: ((docker-hub-username))
+      password: ((docker-hub-password))
+      repository: emeraldsquad/alertmanager-resource
